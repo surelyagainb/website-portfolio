@@ -1,0 +1,132 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8fafc;
+    color: #334155;
+    line-height: 1.6;
+}
+
+/* Navigation */
+header {
+    background-color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 8px #00000010;
+}
+
+header h2 {
+    color: #2563eb;
+}
+
+nav a {
+    color: #334155;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+nav a:hover {
+    color: #2563eb;
+}
+
+/* Home */
+.hero {
+    padding: 100px 8%;
+    background-color: #eaf3ff;
+}
+
+.hero h1 {
+    font-size: 45px;
+    color: #2563eb;
+}
+
+.hero h3 {
+    color: #475569;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #2563eb;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #1d4ed8;
+}
+
+/* Sections */
+section {
+    padding: 40px 8%;
+}
+
+section h2 {
+    color: #2563eb;
+    margin-bottom: 15px;
+}
+
+/* Tech Stack */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #dbeafe;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 10px;
+    box-shadow: 0 3px 8px #00000008;
+}
+
+.cards .card {
+    flex: 1;
+    text-align: center;
+    min-width: 100px;
+    font-weight: bold;
+}
+
+.card h3 {
+    color: #2563eb;
+    margin-bottom: 8px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: white;
+    padding: 15px;
+    color: #64748b;
+    border-top: 1px solid #e2e8f0;
+}
+
+/* Mobile Layout */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav a {
+        margin: 5px;
+        font-size: 14px;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+}
