@@ -104,8 +104,36 @@ section h2 {
     color: #2563eb;
     margin-bottom: 8px;
 }
+/* Card with Image Layout */
+.card-with-img {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
 
-/* Footer */
+.card-content {
+    flex: 1;
+}
+
+.card-img {
+    max-width: 200px; 
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+@media (max-width: 600px) {
+    .card-with-img {
+        flex-direction: column-reverse; 
+        text-align: center;
+    }
+    
+    .card-img {
+        max-width: 100%;
+    }
+}
 footer {
     text-align: center;
     background-color: white;
@@ -113,8 +141,6 @@ footer {
     color: #64748b;
     border-top: 1px solid #e2e8f0;
 }
-
-/* Mobile Layout */
 @media (max-width: 600px) {
     header {
         flex-direction: column;
